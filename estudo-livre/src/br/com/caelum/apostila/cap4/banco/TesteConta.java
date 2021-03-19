@@ -24,11 +24,6 @@ public class TesteConta {
 		System.out.println(c1);
 
 		System.out.println();
-		if (c1.titular == t) {
-			System.out.println("iguais");
-		} else {
-			System.out.println("diferentes");
-		}
 		System.out.println();
 
 		if (c1 == c2) {
