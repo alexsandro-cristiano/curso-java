@@ -1,4 +1,4 @@
-package br.com.caelum.apostila.banco;
+package br.com.caelum.apostila.exercicio.banco.modelo;
 
 public class Cliente {
 	private String nome;

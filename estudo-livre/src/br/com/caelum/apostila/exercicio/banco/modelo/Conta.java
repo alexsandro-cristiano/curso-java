@@ -1,7 +1,4 @@
-package br.com.caelum.apostila.banco.entidades;
-
-import br.com.caelum.apostila.banco.Cliente;
-import br.com.caelum.apostila.banco.Data;
+package br.com.caelum.apostila.exercicio.banco.modelo;
 
 public class Conta {
 	static int indentificador;

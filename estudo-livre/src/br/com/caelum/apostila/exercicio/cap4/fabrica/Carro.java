@@ -1,4 +1,4 @@
-package br.com.caelum.apostila.cap4.fabrica;
+package br.com.caelum.apostila.exercicio.cap4.fabrica;
 
 public class Carro {
 	String cor;

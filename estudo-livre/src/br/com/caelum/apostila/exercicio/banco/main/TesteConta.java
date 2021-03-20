@@ -1,10 +1,10 @@
-package br.com.caelum.apostila.banco.programa;
+package br.com.caelum.apostila.exercicio.banco.main;
 
 import java.util.Scanner;
 
-import br.com.caelum.apostila.banco.Cliente;
-import br.com.caelum.apostila.banco.Data;
-import br.com.caelum.apostila.banco.entidades.Conta;
+import br.com.caelum.apostila.exercicio.banco.modelo.Cliente;
+import br.com.caelum.apostila.exercicio.banco.modelo.Conta;
+import br.com.caelum.apostila.exercicio.banco.modelo.Data;
 
 public class TesteConta {
 
