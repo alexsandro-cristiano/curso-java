@@ -1,54 +1,46 @@
 package br.com.caelum.apostila.banco.programa;
 
+import java.util.Scanner;
+
 import br.com.caelum.apostila.banco.Cliente;
-import br.com.caelum.apostila.banco.Conta;
+import br.com.caelum.apostila.banco.Data;
+import br.com.caelum.apostila.banco.entidades.Conta;
 
 public class TesteConta {
 
 	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		final String agencia = "132-78";
+		String nome,sobrenome,cpf;
+		int dia, mes, ano;
 
-		Conta c1 = new Conta();
-		Conta c2 = new Conta();
-
-		c1.agencia = "125-88";
-		c1.numero = 12358;
-		c1.dtabertura.dia = 19;
-		c1.dtabertura.mes = 03;
-		c1.dtabertura.ano = 21;
-		c1.saldo = 1000.00;
-		Cliente t = new Cliente();
-
-		t.nome = "Alexsandro";
-		t.sobrenome = "Silva";
-		t.cpf = "15748321-52";
-
-		c1.titular = t;
-
-		System.out.println(c1);
-
-		System.out.println();
-		System.out.println();
-
-		if (c1 == c2) {
-			System.out.println("iguais");
-		} else {
-			System.out.println("diferentes");
+		try {
+			System.out.println("Cadastrando Conta:");
+			System.out.println("\nInformação do Cliente");
+			System.out.print("Nome:");
+			nome = input.nextLine();
+			System.out.print("Sobrenome: ");
+			sobrenome = input.nextLine();
+			System.out.print("CPF: ");
+			cpf = input.nextLine();
+			
+			System.out.println();
+			
+			System.out.println("\nData (dd/mm/aaaa): ");
+			dia = input.nextInt();
+			mes = input.nextInt();
+			ano = input.nextInt();
+			
+			Cliente cl = new Cliente(nome, sobrenome, cpf);
+			Data dt = new Data(dia, mes, ano);
+			Conta c1 = new Conta(dt, agencia, cl);
+			
+			System.out.println(c1);
+			
 		}
-		
-		c2.agencia = "125-88";
-		c2.numero = 12851;
-		c2.dtabertura.dia = 18;
-		c2.dtabertura.mes = 03;
-		c2.dtabertura.ano = 21;
-		c2.titular.nome = "Cristiano";
-		c2.titular.sobrenome = "Silva";
-		c2.titular.cpf = "17548321-52";
-		c2.saldo = 1000.00;
-
-		System.out.println(c2);
-		c1.tranferirPara(c2, 500.00);
-		System.out.println(c1);
-		System.out.println(c2);
+		finally {
+			input.close();
+		}
 
 	}
 
