@@ -5,4 +5,8 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="br.edu.faeterj.provas.av1.Aviao"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="br.com.caelum.apostila.cap4.fabrica.Motor"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="br.com.caelum.apostila.cap4.banco.Conta"/>
+    <fullyQualifiedTypeName name="com.sun.security.ntlm.Client"/>
 </qualifiedTypeNameHistroy>

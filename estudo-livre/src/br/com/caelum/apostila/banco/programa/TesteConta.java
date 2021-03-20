@@ -1,4 +1,7 @@
-package br.com.caelum.apostila.cap4.banco;
+package br.com.caelum.apostila.banco.programa;
+
+import br.com.caelum.apostila.banco.Cliente;
+import br.com.caelum.apostila.banco.Conta;
 
 public class TesteConta {
 

@@ -1,4 +1,4 @@
-package br.com.caelum.apostila.cap4.banco;
+package br.com.caelum.apostila.banco;
 
 public class Conta {
 	String agencia;
