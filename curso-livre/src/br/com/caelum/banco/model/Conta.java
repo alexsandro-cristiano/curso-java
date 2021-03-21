@@ -1,26 +1,26 @@
-package br.com.caelum.apostila.exercicio.banco.modelo;
+package br.com.caelum.banco.model;
 
 public class Conta {
 	static int indentificador;
 	private String agencia;
-	private int numero = 12;
+	private int numero;
 	private double saldo;
 	private Cliente titular;
 	private Data dtabertura;
 
-	public Conta(Data data, String agencia) {
+	public Conta(Data data, String agencia,int numero) {
 		Conta.indentificador++;
 		this.agencia = agencia;
-		this.numero +=(Conta.indentificador * numero);
+		this.numero = numero;
 		this.dtabertura = data;
 		this.saldo = 0.0;
 		
 	}
 
-	public Conta(Data data, String agencia, Cliente cliente) {
+	public Conta(Data data, String agencia, int numero, Cliente cliente) {
 		Conta.indentificador++;
 		this.agencia = agencia;
-		this.numero +=(Conta.indentificador * numero);
+		this.numero = numero;
 		this.dtabertura = data;
 		this.saldo = 0.0;
 		this.titular = cliente;

@@ -1,4 +1,4 @@
-package br.com.caelum.apostila.exercicio.banco.modelo;
+package br.com.caelum.banco.model;
 
 public class Data {
 	private int dia;
