@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="br.edu.faeterj.provas.av1.Aviao"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
@@ -9,4 +7,13 @@
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="br.com.caelum.apostila.cap4.banco.Conta"/>
     <fullyQualifiedTypeName name="com.sun.security.ntlm.Client"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="br.com.caelum.apostila.banco.Cliente"/>
+    <fullyQualifiedTypeName name="br.com.caelum.apostila.banco.Data"/>
+    <fullyQualifiedTypeName name="br.com.caelum.apostila.banco.entidades.Conta"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="br.edu.faeterj.provas.av1.apresentacao.ClasseAbstrata"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
 </qualifiedTypeNameHistroy>

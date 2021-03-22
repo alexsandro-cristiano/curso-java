@@ -1,31 +1,29 @@
 package br.edu.faeterj.provas.av1;
 
-public class Aviao{
-	
-	/*Atributos*/
+public class Aviao {
+
+	/* Atributos */
 	public static int frota;
-	protected String prefixo;
-	protected String modelo;
-	protected String fabricante;
+	private String prefixo;
+	private String modelo;
+	private String fabricante;
 	private Boolean estarVoando = false;
 
-	/*Construtores*/
+	/* Construtores */
 	public Aviao() {
-		System.out.println("Iniciando a Construção do Avião");
 		frota++;
-		System.out.println("Avião Construido com Sucesso");
+		System.out.println("Novo Avião Construido");
 	}
 
 	public Aviao(String prefixo, String modelo, String fabricante) {
-		System.out.println("Iniciando a Construção do Avião");
 		frota++;
 		this.prefixo = prefixo;
 		this.modelo = modelo;
 		this.fabricante = fabricante;
-		System.out.println("Avião Construido com Sucesso");
+		System.out.println("Novo Avião Construido");
 	}
 
-	/*Metodos Get e Set*/
+	/* Metodos Get e Set */
 	public static int getFrota() {
 		return frota;
 	}
@@ -58,29 +56,26 @@ public class Aviao{
 		return estarVoando;
 	}
 
-	/*Metodos da Classe*/
+	/* Metodos da Classe */
 	public void levantarVoo() {
 		if (estarVoando == false) {
 			estarVoando = true;
-			System.out.println("\nVOO AUTORIZADO\nESTAMOS VOANDO...");
-
+			System.out.println("\nVoo Autorizado Avião " + this.modelo + "-" + this.fabricante + "\nVOANDO...");
 		} else {
-			System.out.println("\nNAO E POSSIVEL INICIAR VOO");
-
+			System.out.println("\nNão foi possivel iniciar voo Avião " + this.modelo + "-" + this.fabricante);
 		}
 	}
 
 	public void pousar() {
 		if (estarVoando == true) {
 			estarVoando = false;
-			System.out.println("\nINICIANDO POUSO\nPOUSO CONCLUIDO");
-
+			System.out.println("\nIniciando Sistema de pouso\nPouso Concluido");
 		} else {
-			System.out.println("\nNAO ESTAMOS VOOANDO");
+			System.out.println("\nAvião" + this.modelo + this.fabricante + "nao esta voando");
 		}
 	}
 
-	/*To String*/
+	/* To String */
 	@Override
 	public String toString() {
 		return "\nAviao\n" + "Caracteristicas:\n" + "prefixo = " + prefixo + ", modelo = " + modelo + ", fabricante = "
