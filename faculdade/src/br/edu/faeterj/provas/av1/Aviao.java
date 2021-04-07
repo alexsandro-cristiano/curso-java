@@ -3,11 +3,11 @@ package br.edu.faeterj.provas.av1;
 public class Aviao {
 
 	/* Atributos */
-	public static int frota;
-	private String prefixo;
+	public static int frota; //publico
+	private String prefixo; // privado
 	private String modelo;
 	private String fabricante;
-	private Boolean estarVoando = false;
+	protected Boolean estarVoando = false; //protegido
 
 	/* Construtores */
 	public Aviao() {
