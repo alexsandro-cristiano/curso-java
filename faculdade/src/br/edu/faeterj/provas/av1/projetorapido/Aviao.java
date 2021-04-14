@@ -1,4 +1,4 @@
-package br.edu.faeterj.provas.av1;
+package br.edu.faeterj.provas.av1.projetorapido;
 
 public class Aviao {
 
