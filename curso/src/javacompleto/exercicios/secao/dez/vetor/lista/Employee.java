@@ -32,6 +32,11 @@ public class Employee {
 
 	public void increaseSalary(double percentage) {
 		double newValue = this.salary * (percentage/100);
-		this.salary += newValue;
+		this.salary += newValue; //this é opcional porque nao tem abguidade
+		//salary+= salary * percentage / 100; -> correcao
+	}
+	
+	public String toString() {
+		return id + ", " + name + ", " + String.format("%.2f",salary) + "\n";		
 	}
 }
