@@ -1,4 +1,4 @@
-package exercicios.poo;
+package exercicios.poo.lampada;
 
 public class TesteLampada {
 
