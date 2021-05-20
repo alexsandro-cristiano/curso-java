@@ -32,7 +32,8 @@ public class Programa {
 		int N = input.nextInt();
 
 		/*
-		 * Correcao - 1 instancia o obj 2 add obj na lista escolhido o ArrayList por
+		 * Correcao - 1 instancia o obj
+		 *  2 add obj na lista escolhido o ArrayList por
 		 * saber a quantidade de funcionarios
 		 * 
 		 * Se antes do Java 7 List<Employee> listEmployees = new ArrayList<Employee>();
