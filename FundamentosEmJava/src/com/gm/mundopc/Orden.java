@@ -6,13 +6,20 @@ package com.gm.mundopc;
  */
 public class Orden {
 
-	private int idOrden;
+	private final int idOrden;
 	private Computadora[] computadora;
-	private int contadorOrdenes;
+	private static int contadorOrdenes;
 	private int contadorComputadoras;
-	private int maxComputadoras;
+	private final static int MAX_COMPUTADORAS = 10;
 
+	/*
+	 * Aqui cada objeto do Orden tera seu proprio vetor de computadoras Caso voce
+	 * esqueça lembre-se de uma nota fiscal. Na qual demos varias notas fiscais e
+	 * cada uma pode tem varios itens
+	 */
 	public Orden() {
+		this.idOrden = ++Orden.contadorOrdenes;
+		this.computadora = new Computadora[Orden.MAX_COMPUTADORAS]; // iniciando o array
 	}
 
 	public int getIdOrden() {
@@ -31,21 +38,26 @@ public class Orden {
 		return contadorComputadoras;
 	}
 
-	public int getMaxComputadoras() {
-		return maxComputadoras;
-	}
-
 	public void agregarComputadora(Computadora computadora) {
-		if (getMaxComputadoras() != 0) {
-			this.computadora[maxComputadoras] = computadora;
-			maxComputadoras++;
-		} else {
-			this.computadora[maxComputadoras] = computadora;
-			maxComputadoras++;
+		if (this.contadorComputadoras < Orden.MAX_COMPUTADORAS) {
+			this.computadora[this.contadorComputadoras++] = computadora;
+			/*
+			 * O codigo a cima é equivalente a escrever:
+			 * this.computadora[this.contadorComputadoras] = computadora;
+			 * this.contadorComputadoras++
+			 */
+		}
+		else { 
+			System.out.print("Has superado el limite\nLimite es " + Orden.MAX_COMPUTADORAS);
 		}
 	}
 
 	public void mostrarOrden() {
+		System.out.println("Orden #" + idOrden);
+		System.out.println("Computadoras de la orden #" + this.idOrden);
+		for(int i=0; i< this.computadora.length; i++) {
+			System.out.println(this.computadora[i]);
+		}
 
 	}
 
