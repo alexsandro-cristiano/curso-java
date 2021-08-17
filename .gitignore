@@ -1,3 +1,10 @@
 /.metadata/
 /Arquivo/nbproject/private/
 /ed/nbproject/private/
+/ed/build/
+/IntroducaoJDBC/target/
+/jdbc1/nbproject/private/
+/introductionJDBC/target/
+/jdbc1/build/
+/jdbc1/dist/
+*.properties
